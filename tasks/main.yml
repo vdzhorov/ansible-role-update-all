@@ -1,0 +1,7 @@
+---
+
+- import_tasks: update_yum.yml
+  when: ansible_pkg_mgr == "yum" and ansible_distribution == "CentOS"
+
+- import_tasks: update_apt.yml
+  when: (ansible_pkg_mgr == "apt" and ansible_distribution == "Debian") or (ansible_pkg_mgr == "apt" and ansible_distribution == "Ubuntu")
