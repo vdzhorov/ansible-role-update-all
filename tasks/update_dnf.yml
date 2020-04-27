@@ -1,0 +1,6 @@
+---
+
+- name: Update packages (dnf)
+  dnf:
+    name: "*"
+    state: latest
