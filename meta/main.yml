@@ -4,6 +4,7 @@ dependencies: []
 
 galaxy_info:
   author: vdzhorov
+  role_name: update-all
   description: Update all packages on a target host
   company: "Delta.BG"
   license: "license (MIT)"
